@@ -68,6 +68,6 @@ func handleMessageEvent(ev *slack.MessageEvent) string {
 }
 
 func main() {
-	api := slack.New("")
+	api := slack.New(API_KEY)
 	os.Exit(run(api))
 }
